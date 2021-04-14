@@ -31,6 +31,7 @@ def validate():
                login()
           else:
                print("You have entered a wrong password.")
+               closing()
      else:
           print("Username is not found")
           closing()
@@ -110,16 +111,20 @@ def login():
      print("2. \t Deposit")
      print("3. \t Withdraw")
      
-     userchoice = int(input())
-     if userchoice == 1:
-          change_password()
-     elif userchoice == 2:
-          deposit()
-     elif userchoice == 3:
-          withdraw()
-     else:
-          print("You have selected a wrong choice")
-          closing()
+     try:
+          userchoice = int(input())
+          if userchoice == 1:
+               change_password()
+          elif userchoice == 2:
+               deposit()
+          elif userchoice == 3:
+               withdraw()
+          else:
+               print("You have selected a wrong choice")
+               closing()
+     except ValueError:
+          print("You should select numbers not text")
+          login()
 
 print("Welcome to the improved ATM experience")
 print("Created by Onyekachi")
