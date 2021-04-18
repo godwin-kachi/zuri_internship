@@ -47,7 +47,7 @@ def init():
     print("*** WELCOME TO MY BUDGET APP ***")
     print("********************************")
     print("Please ensure you follow the Instructions")
-    
+
     checker = int(input("Enter 0:To Create budget, 1:To Check Budget, 2:To Quit: "))
 
     def instantiator():
@@ -109,8 +109,7 @@ def init():
         else:
             print("Invalid value, please try again ")
             init()
-        checker = int(
-            input("Enter 0:To Create budget, 1:To Check Budget, 2:To Quit: "))
+        checker = int(input("Enter 0:To Create budget, 1:To Check Budget, 2:To Quit: "))
 
 
 init()
