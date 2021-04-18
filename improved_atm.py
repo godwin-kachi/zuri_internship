@@ -2,7 +2,7 @@ import datetime
 import random
 from os import system
 
-clear = lambda: system('cls') #I need to read the full implementation of this function
+clear = lambda: system("cls") #I need to read the full implementation of this function
 
 allowedUsers = {
      "onyekachi": "imagine",
